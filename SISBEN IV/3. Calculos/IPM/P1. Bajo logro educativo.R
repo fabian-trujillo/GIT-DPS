@@ -39,3 +39,5 @@ P1_1_BAJOLOGROEDUC_H = P1_1_BAJOLOGROEDUC_H %>% mutate(PRIVACION_P1_1 = case_whe
                                                        PONDERACION_P1_1 = case_when(PRIVACION_P1_1 < 0 ~ -1, PRIVACION_P1_1 >= 0 ~ PRIVACION_P1_1 * 0.1))
 
 rm(list = ls()[ls() %in% grep("^TMP",ls(),value = TRUE)])
+
+#Comentario de prueba
