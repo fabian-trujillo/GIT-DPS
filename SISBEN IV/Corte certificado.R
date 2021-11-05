@@ -430,4 +430,6 @@ DATA_Municipal=DATA_Municipal[Frecuencias_Estructura$Variables]#Se ordenan las v
 setwd(Salidas)
 write.csv(DATA_Municipal, file = paste("Frecuencias_UNIDOS_Municipal","_",format(Sys.time(), "%d%m%Y"), ".csv", sep=""), row.names = FALSE)
 
+#Prueba comentario
+
 rm(list = ls()[!ls() %in% grep("^DATA_Municipal",ls(),value = TRUE)])#Elimina objetos que no se requieren para los cálculos posteriores
